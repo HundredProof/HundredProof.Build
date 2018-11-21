@@ -10,13 +10,14 @@ $buildVersion = $env:appveyor_build_version
 ###########################################################
 ###    Download and dot source tools to use             ###
 ###########################################################
-NuGet sources add -Name HundredProofMyGet -Source https://www.myget.org/F/hundredproof-nuget/api/v3/index.json
+NuGet sources add -Name HundredProofMyGet -Source https://www.myget.org/F/hundredproof/api/v3/index.json
 NuGet sources add -Name NaosMyGet -Source https://www.myget.org/F/naos-nuget/api/v3/index.json
-NuGet sources add -Name ObcMyGet -Source https://www.myget.org/F/obeautifulecode-nuget/api/v3/index.json
+NuGet sources add -Name ObcMyGet -Source https://www.myget.org/F/obeautifulcode-nuget/api/v3/index.json
 $TempBuildPackagesDir = "../BuildToolsFromNuGet/packages"
 if (-not (Test-Path $TempBuildPackagesDir)) { md $TempBuildPackagesDir | Out-Null }
 $TempBuildPackagesDir = Resolve-Path $TempBuildPackagesDir
-NuGet install HundredProof.Build -OutputDirectory $TempBuildPackagesDir
+NuGet install Naos.Powershell.Build -OutputDirectory $TempBuildPackagesDir
+NuGet install HundredProof.Build.Packaging -OutputDirectory $TempBuildPackagesDir
 
 $nuSpecTemplateFile = Join-Path (Join-Path (ls $TempBuildPackagesDir/HundredProof.Build.*).FullName 'scripts') 'HundredProofNuSpecTemplate.template-nuspec'
 
