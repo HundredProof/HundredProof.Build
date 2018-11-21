@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <authors>HundredProof</authors>
+    <copyright>Copyright (c) 2018 HundredProof</copyright>
+    <projectUrl>https://github.com/HundredProof</projectUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
