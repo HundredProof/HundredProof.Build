@@ -4,6 +4,7 @@
     <authors>HundredProof</authors>
     <copyright>Copyright (c) 2018 HundredProof</copyright>
     <projectUrl>https://github.com/HundredProof</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/HundredProof/HundredProof.Build/master/nuget-icon-v1.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
