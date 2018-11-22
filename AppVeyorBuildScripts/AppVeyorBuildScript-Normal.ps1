@@ -41,7 +41,7 @@ if ($repoConfigFile -eq $null) {
 }
 &$repoConfigFile -ThrowOnPendingUpdate -PreRelease -RepositoryPath $repoPath
 
-$nuSpecTemplateFile = Join-Path (ls $TempBuildPackagesDir/HundredProof.Build.Packaging.*).FullName 'HundredProofNuSpecTemplate.template-nuspec'
+$nuSpecTemplateFile = Join-Path (ls $TempBuildPackagesDir/HundredProof.Build.Packaging.*).FullName 'scripts/HundredProofNuSpecTemplate.template-nuspec'
 
 $nugetFunctionsScriptPath = $(ls $TempBuildPackagesDir -Recurse | ?{$_.Name -eq 'NuGet-Functions.ps1'}).FullName
 
